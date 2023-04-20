@@ -10,7 +10,7 @@ function opponentplay() {
 function play(choice){
     switch(choice) {
         case 'rock':
-
+            
             break
         case 'paper':
 
