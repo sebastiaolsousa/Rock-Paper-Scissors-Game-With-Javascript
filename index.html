@@ -14,17 +14,29 @@
     <main>
         <section id="window">
             <header>
-                <h1>Rock Paper Scissor Game</h1>
+                <h1>Rock Paper Scissors Game</h1>
             </header>
-            <div>
-                Testando...
+            <div class="choose-move">
+                <p>Choose your move:</p>
             </div>
-            <div>
-                Olá
+            <div id="images-player-side">
+                <img id="player-rock" src="images/rock-250px.png" alt="player-rock" onclick="play('rock')">
+                <img id="player-paper" src="images/paper-250px.png" alt="player-paper" onclick="play('paper')">
+                <img id="player-scissors" src="images/scissor-250px.png" alt="player-scissors" onclick="play('scissors')">
             </div>
-            <footer>
-                <p>&copy; Sebastião Junior Luz Sousa</p>
-            </footer>
+            <div id="vs">
+                <hr>
+                <p>VS</p>
+                <hr>
+            </div>
+            <div id="images-opponent-side">
+                <img id="opponent-rock" src="images/question-mark-250px.png" alt="opponent-rock">
+                <img id="opponent-paper" src="images/question-mark-250px.png" alt="opponent-paper">
+                <img id="opponent-scissors" src="images/question-mark-250px.png" alt="opponent-scissor">
+            </div>
+            <div class="choose-move">
+                <p>Your opponent is choosing his move...</p>
+            </div>
         </section>
     </main>
     <script src="script.js"></script>

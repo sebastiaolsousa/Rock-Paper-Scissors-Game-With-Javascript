@@ -19,6 +19,28 @@ main {
     width: 100vw;
 }
 
+section#window > header {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+section#window > div.choose-move > p{
+    padding: 10px;
+    text-align: center;
+    background-color: skyblue;
+    font-weight: bold;
+}
+
+section#window > div#vs > p{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-weight: bolder;
+    font-style: italic;
+}
+
 section#window {
     position: absolute;
     top:50%;
@@ -35,3 +57,50 @@ section#window {
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
+
+section#window > div#images-player-side{
+    padding: 7px;
+}
+
+section#window > div#images-player-side > img{
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    transform: translate(+15px);
+
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+section#window > div#images-player-side > img:hover{
+    cursor: pointer;
+    border: 5px solid gray;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform 0.3s, border 0.1s;
+}
+
+
+section#window > div#images-opponent-side{
+    padding: 7px;
+}
+
+section#window > div#images-opponent-side > img{
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    transform: translate(+15px);
+    
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+section#window > div#images-opponent-side > img:hover{
+    border: 5px solid gray;
+    transform: translate(-0.5px, -0.5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform 0.3s, border 0.1s;
+}
+
+
+
