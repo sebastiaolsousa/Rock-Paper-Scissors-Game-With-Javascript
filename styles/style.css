@@ -25,10 +25,17 @@ section#window > header {
     padding: 10px;
 }
 
-section#window > div.choose-move > p{
+section#window > div.choose-move-player > p{
     padding: 10px;
     text-align: center;
     background-color: skyblue;
+    font-weight: bold;
+}
+
+section#window > div.choose-move-opponent > p{
+    padding: 10px;
+    text-align: center;
+    background-color: lightcoral;
     font-weight: bold;
 }
 
@@ -95,7 +102,7 @@ section#window > div#images-opponent-side > img{
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
 
-    transition: transform 1s;
+    transition: transform 1s, opacity 1s;
 }
 
 section#window > div#images-opponent-side > img:hover{
