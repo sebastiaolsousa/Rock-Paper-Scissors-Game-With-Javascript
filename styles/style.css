@@ -7,10 +7,11 @@
     box-sizing: border-box;
 }
 
-body,html {
-    background-color: rgb(70, 142, 236);
+body {
+    background-color: lightslategray;
     height: 100vh;
     width: 100vw;
+    transition: background-color 1s ease-in-out;
 }
 
 main {
@@ -25,14 +26,14 @@ section#window > header {
     padding: 10px;
 }
 
-section#window > div.choose-move-player > p{
+section#window > div#choose-move-player{
     padding: 10px;
     text-align: center;
     background-color: skyblue;
     font-weight: bold;
 }
 
-section#window > div.choose-move-opponent > p{
+section#window > div#choose-move-opponent{
     padding: 10px;
     text-align: center;
     background-color: lightcoral;
@@ -78,7 +79,7 @@ section#window > div#images-player-side > img{
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
 
-    transition: transform 1s;
+    transition: transform 1s ease;
 }
 
 section#window > div#images-player-side > img:hover{
