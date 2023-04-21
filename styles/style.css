@@ -66,18 +66,19 @@ section#window > div#images-player-side > img{
     display: inline-block;
     width: 30%;
     height: 30%;
-    transform: translate(+15px);
+    margin-left: 7px;
 
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+
+    transition: transform 1s;
 }
 
 section#window > div#images-player-side > img:hover{
     cursor: pointer;
     border: 5px solid gray;
-    transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-    transition: transform 0.3s, border 0.1s;
+    transition: border 0.1s;
 }
 
 
@@ -86,20 +87,21 @@ section#window > div#images-opponent-side{
 }
 
 section#window > div#images-opponent-side > img{
-    display: inline-block;
+    display: inline-flexbox;
     width: 30%;
     height: 30%;
-    transform: translate(+15px);
+    margin-left: 7px;
     
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+
+    transition: transform 1s;
 }
 
 section#window > div#images-opponent-side > img:hover{
     border: 5px solid gray;
-    transform: translate(-0.5px, -0.5px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-    transition: transform 0.3s, border 0.1s;
+    transition: border 0.1s;
 }
 
 
